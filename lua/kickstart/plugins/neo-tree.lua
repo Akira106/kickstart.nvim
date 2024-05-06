@@ -20,6 +20,30 @@ return {
           ['\\'] = 'close_window',
         },
       },
+      filtered_items = {
+        visible = false,
+        hide_dotfiles = false,
+        hide_gitignored = false,
+        hide_hidden = false,
+      },
+    },
+    close_if_last_window = true,
+    window = {
+      mappings = {
+        ['<cr>'] = 'open_vsplit',
+      },
+    },
+    event_handlers = {
+
+      {
+        event = 'file_opened',
+        handler = function(file_path)
+          -- auto close
+          -- vimc.cmd("Neotree close")
+          -- OR
+          require('neo-tree.command').execute { action = 'close' }
+        end,
+      },
     },
   },
 }
