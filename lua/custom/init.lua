@@ -12,4 +12,5 @@ vim.opt.whichwrap = 'b,s,h,l,[,],<,>,~'
 
 return {
   require 'custom.plugins.coc',
+  require 'custom.plugins.nerdtree',
 }
