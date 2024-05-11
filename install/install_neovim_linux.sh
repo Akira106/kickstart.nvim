@@ -1,6 +1,6 @@
 cd ~/.local/bin
 # パス
-export PATH=$PATH:/home/matsushita/.local/bin/nvim-linux64/bin:/home/matsushita/.local/bin/ripgrep-14.0.3-x86_64-unknown-linux-musl:/home/matsushita/.local/bin/fd-v10.0.0-x86_64-unknown-linux-gnu:/home/matsushita/.nodebrew/current/bin/
+export PATH=$PATH:/home/matsushita/.local/bin:/home/matsushita/.local/bin/nvim-linux64/bin:/home/matsushita/.local/bin/ripgrep-14.0.3-x86_64-unknown-linux-musl:/home/matsushita/.local/bin/fd-v10.0.0-x86_64-unknown-linux-gnu:/home/matsushita/.nodebrew/current/bin/
 # neovim
 wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
 tar zxvf nvim-linux64.tar.gz
