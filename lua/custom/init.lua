@@ -10,6 +10,9 @@ vim.opt.expandtab = true
 -- 末尾、先頭から前後の行に移動する
 vim.opt.whichwrap = 'b,s,h,l,[,],<,>,~'
 
+-- 80文字目以降で色を変える
+vim.cmd 'highlight ColorColumn ctermbg=235'
+vim.cmd "let &colorcolumn=join(range(80,999),',')"
 return {
   require 'custom.plugins.coc',
   require 'custom.plugins.nerdtree',
