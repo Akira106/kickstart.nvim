@@ -21,6 +21,7 @@ pip3 install --user  jedi-language-server flake8 black neovim
 curl -L git.io/nodebrew | perl - setup
 nodebrew install-binary v22.1.0
 nodebrew use v22.1.0
+npm install -g yarn
 # 設定ファイル
 git clone https://github.com/Akira106/kickstart.nvim.git ~/.config/nvim
 # neovimでの作業
