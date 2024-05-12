@@ -28,11 +28,11 @@
         }
       ],
       "securities": {
-        "W": "info",
-        "E": "warning",
-        "F": "info",
-        "C": "info",
-        "N": "hint"
+        "W": "error",
+        "E": "error",
+        "F": "error",
+        "C": "error",
+        "N": "error"
       }
     }
   },
@@ -44,5 +44,9 @@
       "command": "black",
       "args": ["-q", "-"]
     }
-  }
+  },
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "coc.preferences.formatOnSave": true,
+  "python.formatting.provider": "black"
 }
