@@ -1,6 +1,6 @@
 cd ~/.local/bin
 # パス
-export PATH=$PATH:/home/matsushita/.local/bin/nvim-linux64/bin:/home/matsushita/.local/bin/ripgrep-14.0.3-x86_64-unknown-linux-musl:/home/matsushita/.local/bin/fd-v10.0.0-x86_64-unknown-linux-gnu:/home/matsushita/.nodebrew/current/bin/
+export PATH=$PATH:/home/matsushita/.local/bin:/home/matsushita/.local/bin/nvim-linux64/bin:/home/matsushita/.local/bin/ripgrep-14.0.3-x86_64-unknown-linux-musl:/home/matsushita/.local/bin/fd-v10.0.0-x86_64-unknown-linux-gnu:/home/matsushita/.nodebrew/current/bin/
 # neovim
 wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
 tar zxvf nvim-linux64.tar.gz
@@ -21,6 +21,7 @@ pip3 install --user  jedi-language-server flake8 black neovim
 curl -L git.io/nodebrew | perl - setup
 nodebrew install-binary v22.1.0
 nodebrew use v22.1.0
+npm install -g yarn
 # 設定ファイル
 git clone https://github.com/Akira106/kickstart.nvim.git ~/.config/nvim
 # neovimでの作業
