@@ -16,4 +16,5 @@ vim.cmd "let &colorcolumn=join(range(80,999),',')"
 return {
   require 'custom.plugins.coc',
   require 'custom.plugins.nerdtree',
+  require 'custom.plugins.rust',
 }
