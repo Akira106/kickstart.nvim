@@ -3,14 +3,20 @@
     "executable.command": "jedi-language-server"
   },
   "diagnostic-languageserver.filetypes": {
-    "python": ["flake8"]
+    "python": [
+      "flake8"
+    ]
   },
   "diagnostic-languageserver.linters": {
     "flake8": {
       "sourceName": "flake8",
       "command": "flake8",
       "debounce": 200,
-      "rootPatterns": [".git", "pyproject.toml", "setup.py"],
+      "rootPatterns": [
+        ".git",
+        "pyproject.toml",
+        "setup.py"
+      ],
       "args": [
         "--format=%(row)d,%(col)d,%(code).1s,%(code)s: %(text)s",
         "-"
@@ -28,21 +34,29 @@
         }
       ],
       "securities": {
-        "W": "info",
-        "E": "warning",
-        "F": "info",
-        "C": "info",
-        "N": "hint"
+        "W": "error",
+        "E": "error",
+        "F": "error",
+        "C": "error",
+        "N": "error"
       }
     }
   },
   "diagnostic-languageserver.formatFiletypes": {
-    "python": ["black"]
+    "python": [
+      "black"
+    ]
   },
   "diagnostic-languageserver.formatters": {
     "black": {
       "command": "black",
-      "args": ["-q", "-"]
+      "args": [
+        "-q",
+        "-"
+      ]
     }
-  }
+  },
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "coc.preferences.formatOnSave": false
 }

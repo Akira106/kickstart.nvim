@@ -17,4 +17,5 @@ return {
   require 'custom.plugins.coc',
   require 'custom.plugins.nerdtree',
   require 'custom.plugins.copilot',
+  require 'custom.plugins.rust',
 }
