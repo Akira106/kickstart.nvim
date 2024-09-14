@@ -12,6 +12,8 @@ vim.opt.whichwrap = 'b,s,h,l,[,],<,>,~'
 
 -- jjでescapeする
 vim.keymap.set('i', 'jj', '<ESC>', { noremap = true, silent = true })
+-- Ctrl+oで下に行を追加してノーマルモード
+vim.keymap.set('n', '<C-o>', '<Esc>o<Esc>', { noremap = true, silent = true })
 
 -- 80文字目以降で色を変える
 vim.cmd 'highlight ColorColumn ctermbg=235'
