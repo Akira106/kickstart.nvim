@@ -11,7 +11,7 @@ vim.opt.expandtab = true
 vim.opt.whichwrap = 'b,s,h,l,[,],<,>,~'
 
 -- jjでescapeする
-vim.keymap.set('i', 'jj', '<ESC>', { noremap = true, silent = true })
+vim.keymap.set('i', 'jk', '<ESC>', { noremap = true, silent = true })
 
 -- 80文字目以降で色を変える
 vim.cmd 'highlight ColorColumn ctermbg=235'
