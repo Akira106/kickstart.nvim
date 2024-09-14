@@ -21,4 +21,5 @@ return {
   require 'custom.plugins.nerdtree',
   require 'custom.plugins.copilot',
   require 'custom.plugins.rust',
+  require 'custom.plugins.commentary',
 }
