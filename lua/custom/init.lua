@@ -16,6 +16,13 @@ vim.keymap.set('i', 'jk', '<ESC>', { noremap = true, silent = true })
 -- fdで削除結果をレジスタに入れない
 vim.keymap.set('n', 'fd', '"_d', { noremap = true, silent = true })
 
+-- matchitを有効にする
+vim.cmd [[
+if exists('g:loaded_matchit') == 0
+  runtime! macros/matchit.vim
+endif
+]]
+
 -- 80文字目以降で色を変える
 vim.cmd 'highlight ColorColumn ctermbg=235'
 vim.cmd "let &colorcolumn=join(range(80,999),',')"
@@ -25,4 +32,5 @@ return {
   require 'custom.plugins.copilot',
   require 'custom.plugins.rust',
   require 'custom.plugins.commentary',
+  require 'custom.plugins.closetag',
 }
