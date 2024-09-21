@@ -15,6 +15,7 @@ vim.keymap.set('i', 'jk', '<ESC>', { noremap = true, silent = true })
 
 -- fdで削除結果をレジスタに入れない
 vim.keymap.set('n', 'fd', '"_d', { noremap = true, silent = true })
+vim.keymap.set('v', 'fd', '"_d', { noremap = true, silent = true })
 
 -- matchitを有効にする
 vim.cmd [[
