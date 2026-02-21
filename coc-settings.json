@@ -1,0 +1,46 @@
+{
+  "diagnostic-languageserver.filetypes": {
+    "python": [
+      "ruff"
+    ]
+  },
+  "diagnostic-languageserver.linters": {
+    "ruff": {
+      "sourceName": "ruff",
+      "command": "ruff",
+      "debounce": 200,
+      "rootPatterns": [
+        ".git",
+        "pyproject.toml",
+        "setup.py"
+      ],
+      "args": [
+        "check",
+        "--output-format=json",
+        "--select=F,E,W",
+        "${file}"
+      ],
+      "offsetLine": 0,
+      "offsetColumn": 0,
+      "parseJson": true
+    }
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "python": [
+      "ruff"
+    ]
+  },
+  "diagnostic-languageserver.formatters": {
+    "ruff": {
+      "command": "ruff",
+      "args": [
+        "format",
+        "-"
+      ]
+    }
+  },
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "coc.preferences.formatOnSave": true
+}
+}
