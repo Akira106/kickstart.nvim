@@ -46,3 +46,18 @@ $ git clone https://github.com/Akira106/kickstart.nvim.git ~/.config/nvim
 :CocInstall coc-eslint
 :Copilot setup
 ```
+
+## init.luaの編集
+
+- Windowsでは`configs`
+- LinuxやMacでは`config`
+
+```
+main = 'nvim-treesitter.configs',
+```
+
+to
+
+```
+main = 'nvim-treesitter.config',
+```
