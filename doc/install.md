@@ -44,6 +44,7 @@ $ git clone https://github.com/Akira106/kickstart.nvim.git ~/.config/nvim
 :CocInstall coc-diagnostic
 :CocInstall coc-pairs
 :CocInstall coc-eslint
+:CocInstall @yaegassy/coc-ruff
 :Copilot setup
 ```
 
